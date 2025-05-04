@@ -7,23 +7,23 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #74b9ff;
+  background-color: #ebc8b2;
 `;
 
 const Title = styled.h2`
   font-size: 2rem;
-  color: white;
+  color: #00000;
   margin-bottom: 20px;
 `;
 
 const Info = styled.p`
   font-size: 18px;
-  color: #fff;
+  color: #00000;
 `;
 
 const Button = styled.button`
   background-color: #ff7675;
-  color: white;
+  color: 00000;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 18px;
@@ -31,7 +31,7 @@ const Button = styled.button`
   transition: 0.3s;
 
   &:hover {
-    background-color: #d63031;
+    background-color: #ebc8b2;
   }
 `;
 
@@ -48,6 +48,7 @@ const Resumo = ({ respostas }) => {
       });
 
       setMensagem("Respostas enviadas com sucesso!");
+     
     } catch (error) {
       console.error("Erro ao enviar:", error);
       setMensagem("Erro ao enviar respostas.");
@@ -59,7 +60,7 @@ const Resumo = ({ respostas }) => {
       <Title>Resumo das Respostas</Title>
       <Info><strong>Nome:</strong> {respostas.nome}</Info>
       <Info><strong>Idade:</strong> {respostas.idade}</Info>
-      <Button onClick={handleEnviar}>Enviar ao Google Sheets</Button>
+      <Button onClick={handleEnviar}>Finalizar</Button>
       {mensagem && <Info>{mensagem}</Info>}
     </Container>
   );

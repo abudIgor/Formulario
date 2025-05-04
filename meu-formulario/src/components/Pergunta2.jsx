@@ -8,12 +8,12 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #ffeaa7;
+  background-color: #ebc8b2;
 `;
 
 const Title = styled.h1`
   font-size: 2rem;
-  color: #6c5ce7;
+  color: #000000;
   margin-bottom: 20px;
 `;
 
@@ -28,8 +28,8 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  background-color: #6c5ce7;
-  color: white;
+  background-color: #6c6d7380;
+  color: #000000;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 18px;
@@ -37,7 +37,7 @@ const Button = styled.button`
   transition: 0.3s;
 
   &:hover {
-    background-color: #4834d4;
+    background-color: #ebc8b2;
   }
 `;
 
